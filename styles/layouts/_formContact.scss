@@ -1,0 +1,118 @@
+.contact-form-container {
+  background-color: #252B42;
+  color: white;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+
+  &__title {
+    font-size: 16px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    margin: 94px 0 34px 57px;
+  }
+
+  &__desc {
+    @extend .center;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  .contact-form {
+    margin: 49px 16.5px 78px 15.5px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 84px 16px 26px 16px;
+    background: #4250BF;
+    border-radius: 13.0742px;
+
+    .input {
+      width: 256px;
+      height: 46px;
+      padding: 12px 20px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 23px;
+      box-sizing: border-box;
+      color: #576677;
+      margin: 0 0 24px 0;
+
+      &::placeholder {
+        color: #576677;
+        font-size: 17px;
+      }
+      
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .input--email {
+      margin-bottom: 0;
+    }
+
+    .checkbox-container {
+      @extend .center;
+      margin: 37px 16px 37px 4px;
+      .checkbox {
+        width: 24px;
+        height: 24px;
+        outline: none;
+        margin-right: 8px;
+      }
+
+      &__text {
+        font-size: 17px;
+      }
+    }
+
+    .button {
+      margin: 0;
+      padding: 14px 28px 13px 28px;
+      border-radius: 23px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .contact-form-container {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+      margin-left: 12px;
+    }
+  
+    &__desc {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  
+    .contact-form {
+      margin-bottom: 79px;
+      width: 401px;
+      padding: 84px 41px 26px 41px;
+      margin-left: 192px;
+      margin-right: 175px;
+
+      .input {
+        width: 319px;
+      }
+
+      .checkbox-container {
+        margin: 37px 16px 37px 4px;
+      }   
+    }
+  } 
+}
+
+@media only screen and (min-width: 1440px) {
+  .contact-form-container {
+    margin-top: 83px;
+  }
+}

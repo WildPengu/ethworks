@@ -1,0 +1,103 @@
+.contact-us {
+  background: linear-gradient(180deg, #FAFBFF 0%, #EFF1F9 41.68%, #E9ECF6 49.59%, #CED3E8 93.91%);
+  padding: 32px 16px 34px 16px;
+
+  &__logo {
+    height: 22px;
+    width: 55px;
+    margin-bottom: 5px;
+    background-image: url("../assets/logo/dark.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .content {
+    @extend .center;
+    flex-direction: column;
+
+    &__title {
+      font-size: 16px;
+      letter-spacing: 0.32px;
+      color: #263396;
+      margin-bottom: 11px;
+      line-height: 34px;
+      font-family: 'Sen';
+    }
+
+    &__link {
+      font-size: 20px;
+      text-align: center;
+      letter-spacing: 0.4px;
+      text-decoration-line: underline;
+      color: #0F81FF;
+      margin-bottom: 40px;
+    }
+    
+    .button {
+      margin: 0;
+      padding: 14px 44px 13px 44px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .footer-container {
+    background: linear-gradient(180deg, #FAFBFF 0%, #EFF1F9 41.68%, #E9ECF6 49.59%, #CED3E8 93.91%);
+  }
+
+  .contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 32px 15px 34px 15px;
+    margin-top: 8px;
+
+    &__logo {
+      background-image: url("../assets/logo/Light.png");
+      width: 96px;
+      height: 39px;
+      
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 305px 221px;
+      grid-template-rows: 20px 40px;
+      justify-items: center;
+
+      &__title {
+        grid-column: 1;
+        grid-row: 1;
+        margin:0;
+      }
+
+      &__link {
+        grid-column: 1;
+        grid-row: 2;
+        margin: 0;
+        margin-top: 14px;
+      }
+
+      .button {
+        grid-column: 2;
+        grid-row: 2;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+  .contact-us {
+    padding: 20px 135px 47px 137px;
+    .content {
+      width: 67%;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
+    }
+  }
+}

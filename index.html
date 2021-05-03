@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="media-container">
+      <div class="media"><i class="twitter icon"></i></div>
+      <div class="media"><i class="facebook f icon"></i></div>
+    </div>
+    <nav class="nav">
+      <div class="nav__logo"></div>
+      <div class="nav-container">
+        <a class="nav-container__link" href="#container">ICO</a>
+        <a class="nav-container__link" href="#team">Team</a>
+        <a class="nav-container__link" href="#contact">Contact</a>
+      </div>
+    </nav>
+    <header class="header" id="ico">
+      <svg class="header__bg-svg" width="1439" height="896" viewBox="0 0 1439 896" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1440 0V708L1149.03 869.877C1104.97 894.384 1053.29 901.353 1004.32 889.388L0 644L0 0H1440Z" fill="url(#paint0_linear)"/>
+        <defs>
+        <linearGradient id="paint0_linear" x1="599.916" y1="566.82" x2="1456.24" y2="463.708" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#3847B5"/>
+        <stop offset="1" stop-color="#253194"/>
+        </linearGradient>
+        </defs>
+        </svg>
+        <div class="header__background-first">
+        </div>
+      <div class="header__background-second"></div>
+      <div class="header__background-third"></div>
+      <div class="header__text">The first fully-&#8288;automatic social crypto trading platform with real crypto
+        currency</div>
+      <div class="subscribe-container">
+        <div class="subscribe-container__text">Subscribe and get the latest information</div>
+        <input type="text" class="input" placeholder="Enter your email" />
+        <button class="button">Subscribe</button>
+      </div>
+      <div class="circle-arrow">
+        <a href="#video" class="material-icons">
+          arrow_downward
+        </a>
+      </div>
+    </header>
+    <div id="video" class="video-container">
+      <div class="video-template">
+        <iframe class="video-template__content" src="https://www.youtube.com/embed/aINlzgrOovI?controls=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+        </iframe>
+      </div>
+      <div class="modal-click team-member-desc" data-modal="modal-video"></div>
+      <div id="modal-video" class="ui modal modal-video-container">
+        <div class="video-modal">
+          <iframe class="video-modal__content" src="https://www.youtube.com/embed/aINlzgrOovI?controls=0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <section class="team-container">
+      <h2 class="team-container__title">team</h2>
+      <div class="team" id="team">
+        <input class="team__radio" type="radio" name="position" checked />
+        <input class="team__radio" type="radio" name="position" />
+        <div class="carousel">
+          <div class="team-member">
+            <div id="modal-egdar" class="ui modal team-modal">
+              <i class="close icon modal-close"></i>
+              <div class="team-modal__name">Edgar Morrison</div>
+              <div class="team-modal__title">ceo</div>
+              <div class="team-modal__desc">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                enim
+                velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco
+                est
+                sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                consequat
+                sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                officia
+                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+                deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+                dolor
+                do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                duis
+                enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+                ullamco
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit
+                officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+              </div>
+            </div>
+            <img src="./assets/edgar.png" alt="Edgar Morrison" class="team-member__picture"></img>
+            <div class="team-member__name">Edgar Morrison</div>
+            <div class="team-member__title">ceo</div>
+            <div data-modal="modal-egdar" class="team-member__desc modal-click">
+              Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...
+            </div>
+            <div class="team-media-container">
+              <div class="team-media"><i class="facebook f icon"></i></div>
+              <div class="team-media"><i class="linkedin icon"></i></div>
+            </div>
+          </div>
+          <div class="team-member">
+            <div id="modal-mae" class="ui modal team-modal">
+              <i class="close icon modal-close"></i>
+              <div class="team-modal__name">Mae Martin</div>
+              <div class="team-modal__title">cto</div>
+              <div class="team-modal__desc">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                enim
+                velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco
+                est
+                sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                consequat
+                sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                officia
+                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+                deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+                dolor
+                do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                duis
+                enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+                ullamco
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit
+                officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+              </div>
+            </div>
+            <img src="./assets/mae.png" alt="Mae Martin" class="team-member__picture"></img>
+            <div class="team-member__name">Mae Martin</div>
+            <div class="team-member__title">cto</div>
+            <div data-modal="modal-mae" class="team-member__desc modal-click">
+              Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...
+            </div>
+            <div class="team-media-container">
+              <div class="team-media"><i class="facebook f icon"></i></div>
+              <div class="team-media"><i class="linkedin icon"></i></div>
+            </div>
+          </div>
+          <div class="team-member">
+            <div id="modal-david" class="ui modal team-modal">
+              <i class="close icon modal-close"></i>
+              <div class="team-modal__name">David Banks</div>
+              <div class="team-modal__title">cfo</div>
+              <div class="team-modal__desc">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                enim
+                velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco
+                est
+                sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                consequat
+                sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                officia
+                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+                deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+                dolor
+                do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                duis
+                enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+                ullamco
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit
+                officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+              </div>
+            </div>
+            <img src="./assets/david.png" alt="David Banks" class="team-member__picture"></img>
+            <div class="team-member__name">David Banks</div>
+            <div class="team-member__title">cfo</div>
+            <div data-modal="modal-david" class="team-member__desc modal-click">
+              Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...
+            </div>
+            <div class="team-media-container">
+              <div class="team-media"><i class="facebook f icon"></i></div>
+              <div class="team-media"><i class="linkedin icon"></i></div>
+            </div>
+          </div>
+          <div class="team-member">
+            <div id="modal-frederick" class="ui modal team-modal">
+              <i class="close icon modal-close"></i>
+              <div class="team-modal__name">Frederick Parsons</div>
+              <div class="team-modal__title">coo</div>
+              <div class="team-modal__desc">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                enim
+                velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco
+                est
+                sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                consequat
+                sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                officia
+                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+                deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua
+                dolor
+                do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                duis
+                enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+                ullamco
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit
+                officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+              </div>
+            </div>
+            <img src="./assets/frederick.png" alt="Frederick Parsons" class="team-member__picture"></img>
+            <div class="team-member__name">Frederick Parsons</div>
+            <div class="team-member__title">coo</div>
+            <div data-modal="modal-frederick" class="team-member__desc modal-click">
+              Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...
+            </div>
+            <div class="team-media-container">
+              <div class="team-media"><i class="facebook f icon"></i></div>
+              <div class="team-media"><i class="linkedin icon"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form-container" id="contact">
+      <div class="contact-form-container__title">contact us</div>
+      <div class="contact-form-container__desc">Most calendars are designed for teams.</br>Slate is designed for
+        freelancers</div>
+      <div class="contact-form">
+        <input type="text" class="input" placeholder="Your Name" />
+        <input type="text" class="input input--email" placeholder="Your Email" />
+        <div class="checkbox-container">
+          <input type="checkbox" class="checkbox">
+          <div class="checkbox-container__text">Checkbox</div>
+        </div>
+        <button class="button">Send</button>
+      </div>
+    </section>
+
+    <div class="footer-container">
+      <section class="contact-us">
+        <div class="contact-us__logo"></div>
+        <div class="content">
+          <h2 class="content__title">Contact us:</h2>
+          <a class="content__link">have@nicecoding.io</a>
+          <button class="button">Read Whitepaper</button>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__info">&copy; Copywriters 2020</div>
+        <div class="footer__info">FAQ</div>
+        <div class="footer__info">Terms of Use</div>
+        <div class="footer__info">Privacy Policy</div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    $('.modal-click').on('click', function () {
+      modal = $(this).attr('data-modal');
+      $('#' + modal + '.modal').modal(
+        'show'
+      );
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.input {
+  width: 287px;
+  height: 46px;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-sizing: border-box;
+  color: #576677;
+  margin: 11px 16px 8px 17px;
+
+  &::placeholder {
+    color: #576677;
+    font-family: Sen;
+    font-size: 17px;
+  }
+  
+  &:focus {
+    outline: none;
+  }
+}

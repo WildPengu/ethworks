@@ -1,0 +1,14 @@
+@import "./base/global";
+@import "./base/variables";
+
+@import "layouts/nav";
+@import "layouts/header";
+@import "layouts/video";
+@import "layouts/team";
+@import "layouts/formContact";
+@import "layouts/contact";
+@import "layouts/footer";
+
+@import "components/button";
+@import "components/input";
+@import "components/fixedMedia";

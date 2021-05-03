@@ -1,0 +1,107 @@
+.video-container {
+  width: 100%;
+  @extend .center;
+  margin: 12px 0;
+  position: relative;
+
+  .video-template {
+    height: 200px;
+    width: 288px;
+
+    &__content {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .modal-click {
+    background-color: transparent;
+    height: 200px;
+    width: 288px;
+    position: absolute;
+    cursor: pointer;
+  }
+}
+
+.modal-video-container {
+  height: 200px !important;
+  width: 288px !important;
+
+  .video-modal {
+    height: 100%;
+    width: 100%;
+
+    &__content {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .video-container {
+    margin: -7px 0 12px 0;
+
+    .video-template {
+      height: 382px;
+      width: 544px;
+    }
+  
+    .modal-click {
+      height: 382px;
+      width: 544px;
+    }
+  }
+  
+  .modal-video-container {
+    height: 382px !important;
+    width: 544px !important;
+  
+    .video-modal {
+      height: 100%;
+      width: 100%;
+  
+      &__content {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .video-container {
+    position: absolute;
+    top: 195px;
+    z-index: 4;
+    right: 60px;
+    margin: 0;
+    width: unset;
+
+    .video-template {
+      height: 382px;
+      width: 544px;
+    }
+  
+    .modal-click {
+      height: 382px;
+      width: 544px;
+    }
+  }
+  
+  .modal-video-container {
+    height: 382px !important;
+    width: 544px !important;
+  
+    .video-modal {
+      height: 100%;
+      width: 100%;
+  
+      &__content {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
