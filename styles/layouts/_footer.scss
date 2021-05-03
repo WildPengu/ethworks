@@ -15,13 +15,13 @@
 @media only screen and (min-width: 768px) {
   .footer {
     font-size: 18px;
-    grid-template-columns: 174px 160px 160px 160px;
-    grid-template-rows: 1fr;
-    gap: 7px;
-    padding: 20px 46px 47px 47px;
+    display: flex;
+    justify-content: center;
     
     &__info:not(:last-child) {
       border-right: 2px solid #9CA4C7;
+      padding-right: 20px;
+      margin-right: 25px;
     }
   }
 }

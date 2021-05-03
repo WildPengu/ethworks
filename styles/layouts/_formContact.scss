@@ -1,16 +1,19 @@
 .contact-form-container {
+  width: 100%;
   background-color: #252B42;
   color: white;
   margin-top: 48px;
   display: flex;
   flex-direction: column;
-  display: inline-block;
+  display: flex;
+  align-items: center;
 
   &__title {
     font-size: 16px;
     letter-spacing: 12px;
     text-transform: uppercase;
-    margin: 94px 0 34px 57px;
+    margin: 94px 0 34px 0;
+    text-align: center;
   }
 
   &__desc {
@@ -20,6 +23,7 @@
   }
 
   .contact-form {
+    width: 288px;
     margin: 49px 16.5px 78px 15.5px;
     display: flex;
     align-items: flex-start;

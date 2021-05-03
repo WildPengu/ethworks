@@ -64,9 +64,11 @@
 
     .content {
       display: grid;
-      grid-template-columns: 305px 221px;
-      grid-template-rows: 20px 40px;
       justify-items: center;
+      width: 67%;
+      grid-template-rows: 20px 40px;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
 
       &__title {
         grid-column: 1;
